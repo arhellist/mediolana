@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="backgroundBox flex flex_column">
+      <div class="mainBox flex flex_column">
+        <div class="mainRow flex flex_row">
+          <div class="mainLogo img"></div>
+
+          <div class="mineCalculator flex flex_column">
+            <h6>курсы валют</h6>
+            <div class="courseValue flex flex_row">
+              <h6 class="courseValueTEXT">USD:</h6>
+              <h6 class="courseValueUSD"></h6>
+              <h6 class="courseValueTEXT">EUR:</h6>
+              <h6 class="courseValueEUR"></h6>
+            </div>
+            <div class="mineCalculator_calculator flex flex_row">
+              <label class="labelCourse" for="USD">USD</label
+              ><input
+                class="inputlCourse"
+                type="text"
+                name=""
+                id="USD"
+                placeholder="USD"
+              />
+              <label class="labelCourse" for="EUR">EUR</label
+              ><input
+                class="inputlCourse"
+                type="text"
+                name=""
+                id="EUR"
+                placeholder="EUR"
+              />
+              <label class="labelCourse" for="RUB">RUB</label
+              ><input
+                class="inputlCourse"
+                type="text"
+                name=""
+                id="RUB"
+                placeholder="RUB"
+              />
+            </div>
+          </div>
+
+          <div class="mainDate flex flex_column">
+            <div class="mainDate_date flex flex_row">
+              <div class="mainDate_date_day"></div>
+              <div class="mainDate_date_month"></div>
+              <div class="mainDate_date_year"></div>
+            </div>
+
+            <div class="mainDate_time flex flex_row">
+              <div class="mainDate_time_hour mainDate_time_item">0</div>
+              <div class="mainDate_time_colon mainDate_time_item">:</div>
+              <div class="mainDate_time_minuets mainDate_time_item">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="topMenu flex flex_row"></div>
+
+        <div class="mainContent flex flex_row">
+          <div class="leftMenu">
+            <div class="leftMenu_item flex flex_column button_dashboard">
+              <div class="leftMenu_iconLogo img" id="leftMenu_item_1"></div>
+              <span class="leftMenu_iconName">панель управления</span>
+            </div>
+
+            <div class="leftMenu_item flex flex_column button_application">
+              <div class="leftMenu_iconLogo img" id="leftMenu_item_2"></div>
+              <span class="leftMenu_iconName">заявки</span>
+            </div>
+
+            <div class="leftMenu_item flex flex_column button_clients">
+              <div class="leftMenu_iconLogo img" id="leftMenu_item_3"></div>
+              <span class="leftMenu_iconName">клиенты</span>
+            </div>
+
+            <div class="leftMenu_item flex flex_column button_funnel">
+              <div class="leftMenu_iconLogo img" id="leftMenu_item_4"></div>
+              <span class="leftMenu_iconName">воронки</span>
+            </div>
+
+            <div class="leftMenu_item flex flex_column button_partners">
+              <div class="leftMenu_iconLogo img" id="leftMenu_item_5"></div>
+              <span class="leftMenu_iconName">партнеры</span>
+            </div>
+          </div>
+
+          <div class="contentPad flex flex_column">
+            <!--  ----------------------------------------------------------------------------------------                -->
+
+            <form class="newApplication flex flex_column flex_column_start" action="#">
+              <div class="newApplication_applicationPad flex flex_column flex_column_start">
+
+                <div class="newApplication_addSelectService_airPlane newApplication-item flex flex_column flex_column_start" >
+                  <h3>AIR TICKET FORM</h3><div class="cancel-cross img"></div>
+               
+
+                  <div class="newApplication_addSelectService_airPlane-ticketData flex flex_column flex_column_start">
+                    <h6 class="newApplication_addSelectService_airPlane-ticketData-header">ticket details</h6>
+                    
+                    <div
+                      class="newApplication_addSelectService_airPlane-select-airline newApplication_inerServise-item flex flex_row"
+                    >
+                      <div class="airlineIco img"></div>
+                      <label
+                        class="newApplication_inerServise-item-label"
+                        for="airline"
+                        >Select airline</label
+                      >
+                      <input
+                        type="text"
+                        list="browsers"
+                        id="airline"
+                        name="airline"
+                      />
+                      <datalist id="browsers">
+                        <option
+                          value="SOV"
+                          label="Шереметьево - Москва"
+                        ></option>
+                        <option
+                          value="DME"
+                          label="Домодедово - Москва"
+                        ></option>
+                        <option value="VKO" label="Внуково - Москва"></option>
+                        <option value="ZIA" label="Жуковский - Москва"></option>
+                      </datalist>
+                    </div>
+
+                    <div
+                      class="newApplication_addSelectService_airPlane-select-flight newApplication_inerServise-item flex flex_row"
+                    >
+                      <label
+                        class="newApplication_inerServise-item-label"
+                        for="flight"
+                        >Write flight number</label
+                      >
+                      <input type="text" id="flight" name="flight" />
+                    </div>
+
+                    <div class="flex flex_row dataTimeBox">
+                      <div
+                        class="newApplication_addSelectService_airPlane-select-airport newApplication_inerServise-item flex flex_row"
+                      >
+                        <label
+                          class="newApplication_inerServise-item-label"
+                          for="airport"
+                          >Select airport FROM</label
+                        >
+                        <input
+                          type="text"
+                          list="browsers"
+                          id="airport"
+                          name="airport"
+                        />
+                        <datalist id="browsers">
+                          <option
+                            value="SOV"
+                            label="Шереметьево - Москва"
+                          ></option>
+                          <option
+                            value="DME"
+                            label="Домодедово - Москва"
+                          ></option>
+                          <option value="VKO" label="Внуково - Москва"></option>
+                          <option
+                            value="ZIA"
+                            label="Жуковский - Москва"
+                          ></option>
+                        </datalist>
+                      </div>
+
+                      <div
+                        class="newApplication_addSelectService_airPlane-select-airport newApplication_inerServise-item flex flex_row"
+                      >
+                        <label
+                          class="newApplication_inerServise-item-label"
+                          for="airport"
+                          >Select airport TO</label
+                        >
+                        <input
+                          type="text"
+                          list="browsers"
+                          id="airport"
+                          name="airport"
+                        />
+                        <datalist id="browsers">
+                          <option
+                            value="SOV"
+                            label="Шереметьево - Москва"
+                          ></option>
+                          <option
+                            value="DME"
+                            label="Домодедово - Москва"
+                          ></option>
+                          <option value="VKO" label="Внуково - Москва"></option>
+                          <option
+                            value="ZIA"
+                            label="Жуковский - Москва"
+                          ></option>
+                        </datalist>
+                      </div>
+                    </div>
+
+                    <div class="flex flex_row airportBox">
+                      <div
+                        class="newApplication_addSelectService_airPlane-select-airport newApplication_inerServise-item flex flex_row"
+                      >
+                        <label
+                          class="newApplication_inerServise-item-label"
+                          for="datetimeInput"
+                          >specify the date and time of departure</label
+                        >
+                        <input
+                          type="datetime-local"
+                          list="dateList"
+                          id="datetimeInput"
+                        />
+                      </div>
+
+                      <div
+                        class="newApplication_addSelectService_airPlane-select-airport newApplication_inerServise-item flex flex_row"
+                      >
+                        <label
+                          class="newApplication_inerServise-item-label"
+                          for="datetimeInput"
+                          >specify the date and time of arrival</label
+                        >
+                        <input
+                          type="datetime-local"
+                          list="dateList"
+                          id="datetimeInput"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="newApplication_addSelectService_airPlane-select-airline newApplication_inerServise-item flex flex_row"
+                    >
+                      <label
+                        class="newApplication_inerServise-item-label"
+                        for="fullnamepassenger"
+                        >fullname passenger</label
+                      >
+                      <input
+                        type="text"
+                        id="fullnamepassenger"
+                        name="fullnamepassenger"
+                      />
+                    </div>
+
+                    <div
+                      class="newApplication_addSelectService_airPlane-select-airline newApplication_inerServise-item flex flex_row"
+                    >
+                      <label
+                        class="newApplication_inerServise-item-label"
+                        for="description"
+                        >description</label
+                      >
+                      <input type="text" id="description" name="description" />
+                    </div>
+                  </div>
+
+                  <div class="newApplication_addSelectService_airPlane-ticketData flex flex_column flex_column_start">
+                    <h6 class="newApplication_addSelectService_airPlane-ticketData-header">ticket details</h6>
+                    
+                    <div
+                      class="newApplication_addSelectService_airPlane-select-airline newApplication_inerServise-item flex flex_row"
+                    >
+                      <div class="airlineIco img"></div>
+                      <label
+                        class="newApplication_inerServise-item-label"
+                        for="airline"
+                        >Select airline</label
+                      >
+                      <input
+                        type="text"
+                        list="browsers"
+                        id="airline"
+                        name="airline"
+                      />
+                      <datalist id="browsers">
+                        <option
+                          value="SOV"
+                          label="Шереметьево - Москва"
+                        ></option>
+                        <option
+                          value="DME"
+                          label="Домодедово - Москва"
+                        ></option>
+                        <option value="VKO" label="Внуково - Москва"></option>
+                        <option value="ZIA" label="Жуковский - Москва"></option>
+                      </datalist>
+                    </div>
+
+                    <div
+                      class="newApplication_addSelectService_airPlane-select-flight newApplication_inerServise-item flex flex_row"
+                    >
+                      <label
+                        class="newApplication_inerServise-item-label"
+                        for="flight"
+                        >Write flight number</label
+                      >
+                      <input type="text" id="flight" name="flight" />
+                    </div>
+
+                    <div class="flex flex_row dataTimeBox">
+                      <div
+                        class="newApplication_addSelectService_airPlane-select-airport newApplication_inerServise-item flex flex_row"
+                      >
+                        <label
+                          class="newApplication_inerServise-item-label"
+                          for="airport"
+                          >Select airport FROM</label
+                        >
+                        <input
+                          type="text"
+                          list="browsers"
+                          id="airport"
+                          name="airport"
+                        />
+                        <datalist id="browsers">
+                          <option
+                            value="SOV"
+                            label="Шереметьево - Москва"
+                          ></option>
+                          <option
+                            value="DME"
+                            label="Домодедово - Москва"
+                          ></option>
+                          <option value="VKO" label="Внуково - Москва"></option>
+                          <option
+                            value="ZIA"
+                            label="Жуковский - Москва"
+                          ></option>
+                        </datalist>
+                      </div>
+
+                      <div
+                        class="newApplication_addSelectService_airPlane-select-airport newApplication_inerServise-item flex flex_row"
+                      >
+                        <label
+                          class="newApplication_inerServise-item-label"
+                          for="airport"
+                          >Select airport TO</label
+                        >
+                        <input
+                          type="text"
+                          list="browsers"
+                          id="airport"
+                          name="airport"
+                        />
+                        <datalist id="browsers">
+                          <option
+                            value="SOV"
+                            label="Шереметьево - Москва"
+                          ></option>
+                          <option
+                            value="DME"
+                            label="Домодедово - Москва"
+                          ></option>
+                          <option value="VKO" label="Внуково - Москва"></option>
+                          <option
+                            value="ZIA"
+                            label="Жуковский - Москва"
+                          ></option>
+                        </datalist>
+                      </div>
+                    </div>
+
+                    <div class="flex flex_row airportBox">
+                      <div
+                        class="newApplication_addSelectService_airPlane-select-airport newApplication_inerServise-item flex flex_row"
+                      >
+                        <label
+                          class="newApplication_inerServise-item-label"
+                          for="datetimeInput"
+                          >specify the date and time of departure</label
+                        >
+                        <input
+                          type="datetime-local"
+                          list="dateList"
+                          id="datetimeInput"
+                        />
+                      </div>
+
+                      <div
+                        class="newApplication_addSelectService_airPlane-select-airport newApplication_inerServise-item flex flex_row"
+                      >
+                        <label
+                          class="newApplication_inerServise-item-label"
+                          for="datetimeInput"
+                          >specify the date and time of arrival</label
+                        >
+                        <input
+                          type="datetime-local"
+                          list="dateList"
+                          id="datetimeInput"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="newApplication_addSelectService_airPlane-select-airline newApplication_inerServise-item flex flex_row"
+                    >
+                      <label
+                        class="newApplication_inerServise-item-label"
+                        for="fullnamepassenger"
+                        >fullname passenger</label
+                      >
+                      <input
+                        type="text"
+                        id="fullnamepassenger"
+                        name="fullnamepassenger"
+                      />
+                    </div>
+
+                    <div
+                      class="newApplication_addSelectService_airPlane-select-airline newApplication_inerServise-item flex flex_row"
+                    >
+                      <label
+                        class="newApplication_inerServise-item-label"
+                        for="description"
+                        >description</label
+                      >
+                      <input type="text" id="description" name="description" />
+                    </div>
+
+                    <div class="newApplication_addSelectService_airPlane-ticketData-cancel flex flex_row">
+                      <div class="newApplication_addSelectService_airPlane-ticketData-cancel-icon img"></div>
+                      <div class="newApplication_addSelectService_airPlane-ticketData-cancel-text">УДАЛИТЬ</div>
+                    </div>
+                  </div>
+
+                  <div class="newApplication-item_addData flex flex_row">
+                    <div class="newApplication-item_addData-Icon img"></div>
+                    <div class="newApplication-item_addData-text">
+                      добавить авиабилет
+                    </div>
+                  </div>
+                </div>
+
+                <div class="newApplication_addSelectService_Hotel newApplication-item flex flex_column flex_column_start">
+                  <h3>HOTEL FORM</h3>
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </form>
+            <div class="newApplication_addSelectService flex flex_row">
+              <div class="newApplication_addSelectService_icon img"></div>
+              <select class="newApplication_addSelectService_select">
+                <option value="">-- SELECT NEW SERVISE --</option>
+                <option value="hotel">HOTEL</option>
+                <option value="air_ticket">AIR TICKET</option>
+                <option value="transfer">TRANSFER</option>
+                <option value="insurance">INSUARENCE</option>
+                <option value="visa ">VISA</option>
+                <option value="additional">ADDITIONAL</option>
+              </select>
+            </div>
+
+            <!--  ----------------------------------------------------------------------------------------                -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
+</html>
